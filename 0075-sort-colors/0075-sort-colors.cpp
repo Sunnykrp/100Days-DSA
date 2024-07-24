@@ -9,21 +9,17 @@ public:
             if(arr[mid]==0)
             {
                 swap(arr[low],arr[mid]);
-            
-                    low++;
-                    mid++;
-                
+                low++;
+                mid++;
             }
             else if(arr[mid]==1)
             {
                 mid++;
             }
-            else
-            {
+            else{
                 swap(arr[mid],arr[high]);
                 high--;
-
-            }
+            }       
         }
     }
 };
